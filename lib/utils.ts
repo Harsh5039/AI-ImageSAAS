@@ -22,10 +22,11 @@ export const handleError = (error: unknown) => {
     throw new Error(`Error: ${error}`);
   } else {
     // This is an unknown type of error
-    console.error(error);
-    throw new Error(`Unknown error: ${JSON.stringify(error)}`);
+    console.error("Unknown error:", error);
+    throw new Error("Unknown error occurred.");
   }
 };
+
 
 // PLACEHOLDER LOADER - while image is transforming
 const shimmer = (w: number, h: number) => `

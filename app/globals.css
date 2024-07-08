@@ -82,6 +82,8 @@
   @apply flex-center min-h-screen w-full bg-purple-100
 }
 
+
+
 .root {
   @apply flex min-h-screen w-full flex-col bg-white lg:flex-row;
 }
