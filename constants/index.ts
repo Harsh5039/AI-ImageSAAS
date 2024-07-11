@@ -1,9 +1,5 @@
 export const navLinks = [
-    {
-      label: "Home",
-      route: "/",
-      icon: "/assets/icons/home.svg",
-    },
+   
     {
       label: "Image Restore",
       route: "/transformations/add/restore",
@@ -29,16 +25,8 @@ export const navLinks = [
       route: "/transformations/add/removeBackground",
       icon: "/assets/icons/camera.svg",
     },
-    {
-      label: "Profile",
-      route: "/profile",
-      icon: "/assets/icons/profile.svg",
-    },
-    {
-      label: "Buy Credits",
-      route: "/credits",
-      icon: "/assets/icons/bag.svg",
-    },
+   
+   
   ];
   
   export const plans = [
