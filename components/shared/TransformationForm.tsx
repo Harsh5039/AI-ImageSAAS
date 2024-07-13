@@ -282,7 +282,8 @@ import { InsufficientCreditsModal } from "./InsufficientCreditsModal"
      <div className="media-uploader-field">
       <CustomField
       control={form.control}
-      name="publicId"
+      // pub="publicId"
+      name='publidId'
       className="flex size-full flex-col"
       render={({ field }) => (
       <MediaUploader
