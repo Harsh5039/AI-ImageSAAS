@@ -29,7 +29,7 @@ export async function getUserById(userId: string) {
 
     if (!user) throw new Error("User not found");
 
-    return JSON.parse(JSON.stringify(user));
+    return user;
   } catch (error) {
     handleError(error);
   }

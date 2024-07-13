@@ -148,20 +148,20 @@ import { InsufficientCreditsModal } from "./InsufficientCreditsModal"
       };
       
 
-      const onInputChangehandler =(fieldName :string,value:
-        string, type:string, onChangeField:(value :string) =>
-          void) =>{
+      const onInputChangehandler =(fieldName :string,value:string, type:string,
+         onChangeField:(value :string) => void) =>{
             debounce(() => {
               setNewTransformation((prevState: any) => ({
                 ...prevState,
                 [type]:{
-                  ...prevState[type],
+                  ...prevState?.[type],
                   [fieldName === 'prompt' ?'promt' :'to']:
                   value
                 }
               }))
+            }, 1000)();
               return onChangeField(value)
-            }, 1000);
+          
           }
 
       const onTransformHandler =() =>{
